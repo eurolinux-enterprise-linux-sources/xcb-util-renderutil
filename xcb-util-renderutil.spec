@@ -1,6 +1,6 @@
 Name:		xcb-util-renderutil
 Version:	0.3.8
-Release:	3%{?dist}
+Release:	5%{?dist}
 Summary:	Convenience functions for the Render extension
 Group:		System Environment/Libraries
 License:	MIT
@@ -61,6 +61,12 @@ rm %{buildroot}%{_libdir}/*.la
 
 
 %changelog
+* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 0.3.8-5
+- Mass rebuild 2014-01-24
+
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 0.3.8-4
+- Mass rebuild 2013-12-27
+
 * Fri Feb 15 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.3.8-3
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
 
