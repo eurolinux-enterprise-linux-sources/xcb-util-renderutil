@@ -1,6 +1,6 @@
 Name:		xcb-util-renderutil
-Version:	0.3.8
-Release:	5%{?dist}
+Version:	0.3.9
+Release:	3%{?dist}
 Summary:	Convenience functions for the Render extension
 Group:		System Environment/Libraries
 License:	MIT
@@ -29,7 +29,7 @@ Development files for xcb-util-renderutil.
 
 
 %build
-%configure --with-pic --disable-static
+%configure --with-pic --disable-static --disable-silent-rules
 make %{?_smp_mflags}
 
 
@@ -49,7 +49,7 @@ rm %{buildroot}%{_libdir}/*.la
 
 
 %files
-%doc README
+%doc README COPYING
 %{_libdir}/*.so.*
 
 
@@ -61,11 +61,20 @@ rm %{buildroot}%{_libdir}/*.la
 
 
 %changelog
-* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 0.3.8-5
-- Mass rebuild 2014-01-24
+* Wed Oct 22 2014 Thomas Moschny <thomas.moschny@gmx.de> - 0.3.9-3
+- Include COPYING.
 
-* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 0.3.8-4
-- Mass rebuild 2013-12-27
+* Mon Aug 18 2014 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.3.9-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_21_22_Mass_Rebuild
+
+* Sun Jun 22 2014 Thomas Moschny <thomas.moschny@gmx.de> - 0.3.9-1
+- Update to 0.3.9.
+
+* Sun Jun 08 2014 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.3.8-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_21_Mass_Rebuild
+
+* Sun Aug 04 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.3.8-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild
 
 * Fri Feb 15 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.3.8-3
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
